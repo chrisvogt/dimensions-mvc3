@@ -1,38 +1,140 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title><use content="title">Default title</use></title>
-    <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
+<!doctype html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!-- Consider adding a manifest.appcache: h5bp.com/d/Offline -->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+
+  <!-- Use the .htaccess and remove these lines to avoid edge case issues.
+       More info: h5bp.com/i/378 -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>Dimensions Starter Theme for ASP .NET MVC 3, Powered By the Spark View Engine</title>
+  <meta name="description" content="${ Dimensions } is a starter theme for ASP .NET MVC 3 using the Spark View Engine. Dimensions contains the HTML5 Boilerplate.">
+
+
+  <meta name="author" content="humans.txt">
+
+  <!-- Mobile viewport optimized: h5bp.com/viewport -->
+  <meta name="viewport" content="width=1008, initial-scale=1.0">
+
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory: mathiasbynens.be/notes/touch-icons -->
+
+  <link rel="stylesheet" media="all" href="css/978grid.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- More ideas for your <head> here: h5bp.com/d/head-Tips -->
+
+  <!-- All JavaScript at the bottom, except this Modernizr build.
+       Modernizr enables HTML5 elements & feature detects for optimal performance.
+       Create your own custom Modernizr build: www.modernizr.com/download/ -->
+  <script src="js/libs/modernizr-2.5.3.min.js"></script>
+
 </head>
+<body id="page-home">
+  <!-- Prompt IE 6 users to install Chrome Frame. Remove this if you support IE 6.
+       chromium.org/developers/how-tos/chrome-frame-getting-started -->
+  <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+  
+  <div class="wrap">
+  
+    <header id="page-top">
 
-<body>
-    <div class="page">
+      <div id="top-bar">
+        <div id="top-content" class="container_12">
+          <div id="search" class="grid_3">
+            <form>
+              <input type="text" id="s" name="s" placeholder="Search..." />
+              <input type="submit" id="go" name="go" />
+            </form>
+          </div><!-- end #search -->
+          <div id="login" class="grid_2 push_7">
+            <a href="#" title="Login">
+              <span>Login</span>
+            </a>
+          </div><!-- end #login -->
+        </div><!-- end #top-content -->
+      </div><!-- end #top-bar -->
 
-        <div id="header">
-            <div id="title">
-                <h1>My MVC Application</h1>
-            </div>
-              
-            <div id="logindisplay">
-                <LogOnUserControl />
-            </div> 
-            
-            <div id="menucontainer">
-            
-                <ul id="menu">              
-                    <li>!{Html.ActionLink("Home", "Index", "Home")}</li>
-                    <li>!{Html.ActionLink("About", "About", "Home")}</li>
-                </ul>
-            
-            </div>
-        </div>
+      <div id="banner">
+        <div id="teaser">
+          <h1><span class="orange">$</span><span class="teal">{</span> Dimension <span class="teal">}</span></h1>
+          <p id="tagline">
+            ASP .NET MVC3<br />
+            Spark Starter Theme
+          </p>
+        </div><!-- end #teaser -->
+        <nav id="primary-nav">
+          <ul>
+            <li>
+              <a href="#" title="Home">Home</a>
+            </li>
+            <li>
+              <a href="#" title="About">About</a>
+            </li>
+          </ul>
+        </nav><!-- end #primary-nav -->
+      </div><!-- end #banner -->
 
-        <div id="main">
-            <use content="view" />
+    </header><!-- end #page-top -->
+    
+    <div id="inner-wrap" class="container_12">
+      
+      <div id="content" class="grid_8" role="main">
+        <article>
+          <h2>One morning, when Gregor Samsa woke from troubled dreams...</h2>
+          <p>Maecenas felis turpis, elementum et placerat vitae, rhoncus sed turpis. Quisque ultricies arcu vestibulum mi feugiat cursus. Curabitur tristique rhoncus libero, ut mattis ipsum dignissim quis. Vivamus pulvinar imperdiet ornare. Maecenas sapien leo, tincidunt in vehicula vitae, placerat non odio. Mauris sodales lorem vel lacus elementum ultrices. Donec nec viverra risus. In rutrum justo eget lacus volutpat nec porta lectus congue. Curabitur tincidunt sodales elit et laoreet.</p>
+          <p>Suspendisse ac condimentum urna. Duis ac risus vel lacus euismod tincidunt. Nulla molestie rutrum nulla ac imperdiet. Sed et nibh magna, in condimentum ante. Sed tincidunt leo in ipsum auctor congue. Quisque commodo bibendum purus, ac sodales nisi pulvinar at. Morbi ac mauris sed velit varius accumsan in ac orci. Aenean sollicitudin mi et turpis euismod tincidunt.</p>
+          <p>To learn more about ASP.NET MVC visit <a href="http://asp.net/mvc" title="ASP.NET MVC Online">http://asp.net/mvc</a>.</p>
+        </article>
+      </div><!-- end #content -->
 
-            <div id="footer">
-            </div>
-        </div>
-    </div>
+      <aside id="sidebar" class="grid_4">
+        This is the sidebar widget area.
+      </aside><!-- end #sidebar -->
+
+      &nbsp;<!-- TODO: Replace this quick fix with a proper solution. -->
+
+    </div><!-- end #inner-wrap -->
+
+  </div><!-- end #wrap -->
+
+  <footer id="foot-wrap">
+
+    <div id="upper-foot">
+      <img src="img/t.gif" id="html5" width="39" height="54" alt="HTML5 Logo"/>
+    </div><!-- end #upper-foot -->
+
+    <div id="copyr">
+      <p>
+        &copy; 2012 Your Name Here. All Rights Reserved.<br />
+        Theme by <a href="http://artinreality.com" title="Art In Reality, LLC">Art In Reality, LLC</a>.
+      </p>
+    </div><!-- end #copyr -->
+
+  </footer><!-- end #foot-wrap -->
+
+  <!-- JavaScript at the bottom for fast page loading -->
+
+  <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.1.min.js"><\/script>')</script>
+
+  <!-- scripts concatenated and minified via build script -->
+  <script src="js/plugins.js"></script>
+  <script src="js/script.js"></script>
+  <!-- end scripts -->
+
+  <!-- Asynchronous Google Analytics snippet. Change UA-XXXXX-X to be your site's ID.
+       mathiasbynens.be/notes/async-analytics-snippet -->
+  <script>
+    var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+    g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+    s.parentNode.insertBefore(g,s)}(document,'script'));
+  </script>
 </body>
 </html>
