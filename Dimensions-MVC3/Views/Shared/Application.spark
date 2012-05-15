@@ -31,7 +31,7 @@
   <!-- All JavaScript at the bottom, except this Modernizr build.
        Modernizr enables HTML5 elements & feature detects for optimal performance.
        Create your own custom Modernizr build: www.modernizr.com/download/ -->
-  <script src="js/libs/modernizr-2.5.3.min.js"></script>
+  <script src="~/Content/js/libs/modernizr-2.5.3.min.js"></script>
 
 </head>
 <body id="page-home">
@@ -52,10 +52,7 @@
             </form>
           </div><!-- end #search -->
           <div id="login" class="grid_2 push_7">
-		  <LogOnUserControl />
-            <a href="#" title="Login">
-              <span>Login</span>
-            </a>
+			<LogOnUserControl />
           </div><!-- end #login -->
         </div><!-- end #top-content -->
       </div><!-- end #top-bar -->
@@ -99,7 +96,7 @@
   <footer id="foot-wrap">
 
     <div id="upper-foot">
-      <img src="img/t.gif" id="html5" width="39" height="54" alt="HTML5 Logo"/>
+      <img src="~/Content/img/t.gif" id="html5" width="39" height="54" alt="HTML5 Logo"/>
     </div><!-- end #upper-foot -->
 
     <div id="copyr">

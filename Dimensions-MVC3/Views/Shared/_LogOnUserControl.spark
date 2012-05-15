@@ -3,5 +3,7 @@
     [ !{Html.ActionLink("Log Off", "LogOff", "Account")} ]
 </if>
 <else>
-	[ !{Html.ActionLink("Log On", "LogOn", "Account")} ]
+  <a href="${Url.Action("LogOn", "Account")}" title="Login">
+    <span>Login</span>
+  </a>
 </else>
