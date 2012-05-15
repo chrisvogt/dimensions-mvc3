@@ -1,0 +1,9 @@
+﻿<use namespace="System.Web.Mvc" />
+<viewdata model="HandleErrorInfo" />
+<content name="title">
+    Error
+</content>
+
+<h2>
+    Sorry, an error occurred while processing your request.
+</h2>
