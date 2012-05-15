@@ -12,8 +12,8 @@
        More info: h5bp.com/i/378 -->
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-  <title>Dimensions Starter Theme for ASP .NET MVC 3, Powered By the Spark View Engine</title>
-  <meta name="description" content="${ Dimensions } is a starter theme for ASP .NET MVC 3 using the Spark View Engine. Dimensions contains the HTML5 Boilerplate.">
+  <title><use content="title">Dimensions Starter Theme for ASP .NET MVC 3, Powered By the Spark View Engine</use></title>
+  <meta name="description" content="Dimensions is a starter theme for ASP .NET MVC 3 using the Spark View Engine. Dimensions contains the HTML5 Boilerplate.">
 
 
   <meta name="author" content="humans.txt">
@@ -23,7 +23,7 @@
 
   <!-- Place favicon.ico and apple-touch-icon.png in the root directory: mathiasbynens.be/notes/touch-icons -->
 
-  <link rel="stylesheet" href="~/Content/css/978grid.css">
+  <link rel="stylesheet" media="all" href="~/Content/css/978grid.css">
   <link rel="stylesheet" href="~/Content/css/style.css">
 
   <!-- More ideas for your <head> here: h5bp.com/d/head-Tips -->
@@ -52,6 +52,7 @@
             </form>
           </div><!-- end #search -->
           <div id="login" class="grid_2 push_7">
+		  <LogOnUserControl />
             <a href="#" title="Login">
               <span>Login</span>
             </a>
@@ -69,12 +70,8 @@
         </div><!-- end #teaser -->
         <nav id="primary-nav">
           <ul>
-            <li>
-              <a href="#" title="Home">Home</a>
-            </li>
-            <li>
-              <a href="#" title="About">About</a>
-            </li>
+            <li>!{Html.ActionLink("Home", "Index", "Home")}</li>
+            <li>!{Html.ActionLink("About", "About", "Home")}</li>
           </ul>
         </nav><!-- end #primary-nav -->
       </div><!-- end #banner -->
@@ -85,7 +82,7 @@
       
       <div id="content" class="grid_8" role="main">
         <article>
-          <use content="view" />
+			<use content="view" />
         </article>
       </div><!-- end #content -->
 
@@ -118,11 +115,11 @@
 
   <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.1.min.js"><\/script>')</script>
+  <script>window.jQuery || document.write('<script src="~/Content/js/libs/jquery-1.7.1.min.js"><\/script>')</script>
 
   <!-- scripts concatenated and minified via build script -->
-  <script src="js/plugins.js"></script>
-  <script src="js/script.js"></script>
+  <script src="~/Content/js/plugins.js"></script>
+  <script src="~/Content/js/script.js"></script>
   <!-- end scripts -->
 
   <!-- Asynchronous Google Analytics snippet. Change UA-XXXXX-X to be your site's ID.
